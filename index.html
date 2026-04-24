@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    
+</head>
+
+<body>
+    <div class="bodyWrapper">
+        <section id="calculator">
+            <div class="inputOutput">
+                <input type="text" name="userInput" id="userInput">
+                <span class="calcOutput"></span>
+            </div>
+            <div class="buttonsContainer">
+                <button onclick="clearAllInput()" class="clearAllBtn">AC</button>
+                <button onclick="displayInput('/')" class="operator">/</button>
+                <button onclick="displayInput('*')" class="operator">*</button>
+                <button onclick="clearOneInput()" class="clearOneBtn">CE</button>
+                <button onclick="displayInput('7')" class="number">7</button>
+                <button onclick="displayInput('8')" class="number">8</button>
+                <button onclick="displayInput('9')" class="number">9</button>
+                <button onclick="displayInput('-')" class="operator">-</button>
+                <button onclick="displayInput('4')" class="number">4</button>
+                <button onclick="displayInput('5')" class="number">5</button>
+                <button onclick="displayInput('6')" class="number">6</button>
+                <button onclick="displayInput('+')" class="operator">+</button>
+                <button onclick="displayInput('1')" class="number">1</button>
+                <button onclick="displayInput('2')" class="number">2</button>
+                <button onclick="displayInput('3')" class="number">3</button>
+                <button onclick="calculate()" class="operator">=</button>
+                <button onclick="displayInput('%')" class="operator">%</button>
+                <button onclick="displayInput('0')" class="number">0</button>
+                <button onclick="displayInput('.')" class="number">.</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
