@@ -1,0 +1,84 @@
+@font-face {
+    font-family: poppinMedium;
+    src: url(Poppins-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppinMedium;
+}
+
+.bodyWrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b646d;
+}
+
+#calculator {
+    width: 360px;
+    height: 560px;
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+
+.inputOutput {
+    background-color: #313131;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 24px;
+}
+
+#userInput {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: end;
+    color: #fff;
+    font-size: 24px;
+}
+
+.calcOutput {
+    font-size: 40px;
+    color: #fff;
+}
+
+.buttonsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 415px;
+    border-radius: 34px;
+    overflow: hidden;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equalOperator {
+    grid-column: 4/4;
+    grid-row: 4/6;
+    background-color: #313131;
+    color: #fff;
+}
