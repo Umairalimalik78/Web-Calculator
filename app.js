@@ -1,6 +1,5 @@
 let input = document.getElementById('userInput')
 let output = document.getElementById('calcOutput')
-let dotCount = 0
 
 function displayInput(num) {
     let operators = ['+', '-', '/', '*', '%']
@@ -10,12 +9,12 @@ function displayInput(num) {
         input.value = input.value.slice(0, -1) + num
         return
     }
-    if (num === '.') {
-        dotCount++
-        if (dotCount > 1) {
-            return
-        }
+
+    let lastNumber = input.value.split(/[\+\-\*\/%]/).pop()
+    if (num === '.' && lastNumber.includes('.')) {
+        return
     }
+
     input.value += num
 
 }
