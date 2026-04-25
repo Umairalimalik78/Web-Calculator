@@ -12,11 +12,20 @@
 
 .bodyWrapper {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #5b646d;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 16px;
+}
+
+#about{
+    color: #fff;
+    text-align: center;
+    font-size: 1.4vh;
 }
 
 #calculator {
@@ -49,11 +58,16 @@
     text-align: end;
     color: #fff;
     font-size: 24px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #calcOutput {
     font-size: 40px;
     color: #fff;
+    width: 100%;
+    overflow-x: hidden;
+    text-align: end;
 }
 
 .buttonsContainer {
