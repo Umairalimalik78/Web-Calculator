@@ -96,10 +96,4 @@ No installations required! Just a web browser.
 
 ---
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
 > Made with ❤️ by Umair Ali
